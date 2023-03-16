@@ -1,10 +1,8 @@
 package humanAndPet;
 
-import humanAndPet.Interface.Printable;
-
 import java.util.ArrayList;
 
-public class House implements Printable {
+public class House {
     private Human human;
     private ArrayList<Pet> pets = new ArrayList<>();
 
@@ -55,14 +53,14 @@ public class House implements Printable {
         Pet pet = null;
         int check = checkInHouse(petName);
         if (check == -1) {
-            System.out.printf("Питомца с именем '%s' нет в доме.\n", petName);
+            System.out.printf("В доме нет такого питомца!");
         } else {
             pet = this.pets.get(check);
         }
         return pet;
     }
 
-    @Override
+
     public void print() {
         if (this.pets.size() != 0) {
             System.out.printf("В доме человека есть вот такие питомцы: \n");

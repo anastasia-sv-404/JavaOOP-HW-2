@@ -1,6 +1,6 @@
 package geoTreeResearch;
 
-import humanAndPet.Interface.Printable;
+import geoTreeResearch.Interface.Printable;
 
 import java.util.Random;
 
