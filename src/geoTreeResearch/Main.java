@@ -60,6 +60,7 @@ public class Main {
         tree.print();
 
 
+//        Research research = new Research(tree);
 //        research.spendRelationships(ivan, Relationship.parent).print();
 
         new Result(tree, ivan, Relationship.parent).print();// Кому Иван приходится родителем.
